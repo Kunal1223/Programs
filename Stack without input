@@ -1,0 +1,264 @@
+//stack using without user input
+
+#include<iostream>
+using namespace std;
+#define size 30
+
+class Stack
+{
+private :
+int top;
+int arr[size];
+int item;
+
+public:
+
+Stack()
+{
+top = 0;
+}
+
+void push(int n)
+{
+if(top==size)
+cout<<"Overflow\n";
+
+else
+{
+
+arr[top++]=n;
+
+}
+}
+
+void pop()
+{
+if(top==0)
+cout<<"Underflow\n";
+
+else
+{
+top--;
+#include<iostream>
+using namespace std;
+#define size 30
+
+class Stack
+{
+private :
+int top;
+int arr[size];
+int item;
+
+public:
+
+Stack()
+{
+top = 0;
+}
+
+void push(int n)
+{
+if(top==size)
+cout<<"Overflow\n";
+
+else
+{
+
+arr[top++]=n;
+
+}
+}
+
+void pop()
+{
+if(top==0)
+cout<<"Underflow\n";
+
+else
+{
+top--;
+
+}
+}
+
+void display()
+{
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+{
+for(int i=0; i<top; i++)
+{
+cout<<arr[i];#include<iostream>
+using namespace std;
+#define size 30
+
+class Stack
+{
+private :
+int top;
+int arr[size];
+int item;
+
+public:
+
+Stack()
+{
+top = 0;
+}
+
+void push(int n)
+{
+if(top==size)
+cout<<"Overflow\n";
+
+else
+{
+
+arr[top++]=n;
+
+}
+}
+
+void pop()
+{
+if(top==0)
+cout<<"Underflow\n";
+
+else
+{
+top--;
+
+}
+}
+
+void display()
+{
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+{
+for(int i=0; i<top; i++)
+{
+cout<<arr[i];
+cout<<"\n";
+}
+}
+}
+
+void peek()
+{
+
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+cout<<arr[top-1];
+}
+
+};
+
+int main()
+{
+int choice, exit_p = 1;
+    Stack obj;
+     obj.push(34);
+    obj.push(44);
+    obj.push(55);
+    obj.display();
+    cout<<"Peek:\n";
+     obj.peek();
+    cout<<"After pop\n";
+    obj.pop();
+    obj.display();
+    cout<<"Peek:\n";
+    obj.peek();
+    return 0;
+
+}
+cout<<"\n";
+}
+}
+}
+
+void peek()
+{
+
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+cout<<arr[top-1];
+}
+
+};
+
+int main()
+{
+int choice, exit_p = 1;
+    Stack obj;
+     obj.push(34);
+    obj.push(44);
+    obj.push(55);
+    obj.display();
+    cout<<"Peek:\n";
+     obj.peek();
+    cout<<"After pop\n";
+    obj.pop();
+    obj.display();
+    cout<<"Peek:\n";
+    obj.peek();
+    return 0;
+
+}
+}
+}
+
+void display()
+{
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+{
+for(int i=0; i<top; i++)
+{
+cout<<arr[i];
+cout<<"\n";
+}
+}
+}
+
+void peek()
+{
+
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+cout<<arr[top-1];
+}
+
+};
+
+int main()
+{
+int choice, exit_p = 1;
+    Stack obj;
+     obj.push(34);
+    obj.push(44);
+    obj.push(55);
+    obj.display();
+    cout<<"Peek:\n";
+     obj.peek();
+    cout<<"After pop\n";
+    obj.pop();
+    obj.display();
+    cout<<"Peek:\n";
+    obj.peek();
+    return 0;
+
+}
