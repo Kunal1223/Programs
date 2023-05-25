@@ -1,0 +1,105 @@
+//stack using an array with the peek value
+
+#include<iostream>
+using namespace std;
+#define size 30
+
+class Stack
+{
+private :
+int top;
+int arr[size];
+int item;
+
+public:
+
+Stack()
+{
+top = 0;
+}
+
+void push()
+{
+if(top==size)
+cout<<"Overflow\n";
+
+else
+{
+cout<<"Enter item\n";
+cin>>item;
+arr[top++]=item;
+cout<<"Item pushed\n";
+}
+}
+
+void pop()
+{
+if(top==0)
+cout<<"Underflow\n";
+
+else
+{
+top--;
+cout<<"Item poppped\n";
+}
+}
+
+void display()
+{
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+{
+for(int i=0; i<top; i++)
+{
+cout<<arr[i];
+}
+}
+}
+
+void peek()
+{
+
+if(top==0)
+cout<<"Stack is empty\n";
+
+else
+cout<<arr[top];
+}
+
+};
+
+int main()
+{
+int choice, exit_p = 1;
+    Stack obj;
+    cout << "\nSimple Stack Example - Class and Member Functions - C++";
+    do {
+        cout << "\n\nStack Main Menu";
+
+        cout << "\n1.Push \n2.Pop \n3.Display \n4.Peek \nOthers to exit";
+        cout << "\nEnter Your Choice : ";
+        cin>>choice;
+        switch (choice) {
+            case 1:
+                obj.push();
+                break;
+            case 2:
+                obj.pop();
+                break;
+            case 3:
+                obj.display();
+                break;
+            case 4:
+            obj.peek();
+            break;
+            default:
+                exit_p = 0;
+                break;
+        }
+    } while (exit_p);
+
+    return 0;
+
+}
